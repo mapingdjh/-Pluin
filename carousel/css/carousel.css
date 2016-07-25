@@ -1,0 +1,70 @@
+button {
+    outline: none;
+    border: none;
+}
+.carousel {
+    position: relative;
+    margin: 20px auto;
+}
+.carousel .carousel-lists li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.carousel .carousel-lists li.active {
+    display: block;
+}
+.carousel-prev,.carousel-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 41px;
+    height: 41px;
+    opacity: .4;
+    background: url('../img/ico.png') no-repeat;
+    cursor: pointer;
+}
+.carousel-prev:hover,
+.carousel-next:hover{
+    opacity: .8;
+}
+.carousel-prev {
+    left: 10px;
+    background-position: -2px -2px;
+}
+.carousel-next {
+    right: 10px;
+    background-position:-2px -49px;
+}
+.carousel-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0,0,0,.4);
+}
+.carousel-title a {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 12px;
+}
+.carousel-pagination {
+    position: absolute;
+    bottom: 10px;
+}
+.carousel-pagination li {
+    float: left;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url('../img/ico.png');
+    background-repeat: no-repeat;
+    background-position: -24px -126px;
+    cursor: pointer;
+}
+.carousel-pagination li.hover {
+    background-position: -10px -126px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点图插件1</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/carousel.css"/>
+</head>
+<body>
+    <div class="carousel">
+        <ul class="carousel-lists">
+            <li class="active"><a href="http://www.xwcms.net"><img src="img/1.jpg" alt="美国俄州遭遇龙卷风 已致91人死"></a></li>
+            <li><a href="http://www.xwcms.net"><img src="img/2.jpg" alt="深圳路面塌陷形成直径10米大坑"></a></li>
+            <li><a href="http://www.xwcms.net"><img src="img/3.jpg" alt='"520" 武汉新人扎堆结婚'></a></li>
+            <li><a href="http://www.xwcms.net"><img src="img/4.jpg" alt="暴雨突袭广州 南沙上演科幻大片"></a></li>
+            <li><a href="http://www.xwcms.net"><img src="img/5.jpg" alt="上海美博会模特赤身才会博眼球"></a></li>
+        </ul>
+        <!-- 上一页、下一页按钮 -->
+        <button class="carousel-prev"></button>
+        <button class="carousel-next"></button>
+        <!-- title -->
+        <h2 class="carousel-title"><a href="#">美国俄州遭遇龙卷风 已致91人死</a></h2>
+        <!--分页指示器-->
+        <ul class="carousel-pagination">
+            <li class="hover"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
+<script>
+    $('.carousel').carousel({
+        autoplay   : true,                    // 开启自动播放
+        speed      : 3000,                    // 轮播间隔时间
+        prevButton : ".carousel-prev",        // 上一页按钮class
+        nextButton : ".carousel-next",        // 下一页按钮class
+        pagination : ".carousel-pagination",  // 分页指示器父容器  
+    })
+</script>
