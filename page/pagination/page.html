@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分页</title>
+	<link rel="stylesheet" href="css/pagination.css">
+</head>
+<body>
+	<div class="container">
+		<div class="mg-pagination">
+			<!-- <a href="javascript:;" class="prevpage">&lt;</a>
+			<div class="pagination-simple">
+				<input type="text" value="4">
+				<em class="slash">/</em>
+				<span class="totalPage">10</span>
+			</div>
+			<a href="javascript:;" class="nextpage">&gt;</a> -->
+		</div>
+	</div>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/pagination.js"></script>
+</body>
+</html>
+<script>
+    // TODO 总记录数，后台获取
+    var totalCount = 50;     	  
+	$(".container").pagination({  
+		simple: true,
+		curPage: 4,          	  // 当前第几页，1是第一页,页码从1开始
+		pageSize: 5,         	  // 每页五条
+		totalCount: totalCount,   // 总记录数
+		//display: [1,5,1],         // 分页显示方式
+		//prevContent: "<",         // 上一页按钮内容: 默认为：> 
+    	//nextContent: ">",         // 下一页按钮内容  默认为：<
+		//copying: true,            // 开启首页和尾页： 默认为false，true开启
+		callback: function(curpage){  // 分页显示后的回调
+			console.log("当前页："+curpage);
+		}
+	});
+</script>

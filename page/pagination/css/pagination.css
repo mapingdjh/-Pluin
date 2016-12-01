@@ -1,0 +1,68 @@
+/**
+ * @description: 分页样式
+ * @author：maping(2016/11/13)
+ * @update: 
+ */
+
+body {
+    color: #666;
+    font: 14px/18px "\5FAE\8F6F\96C5\9ED1",Arial,sans-serif,"\5B8B\4F53";
+    background: #fff;
+}
+.mg-pagination {
+	font-size: 14px;
+}
+.mg-pagination .prevpage,
+.mg-pagination .nextpage {
+	font-family: simsum;
+}
+/* span容器作为当前页和置灰按钮和省略号容器 */
+.mg-pagination > a,
+.mg-pagination > span,
+.pagination-simple input {
+ 	display: inline-block;
+ 	padding: 2px 5px;
+ 	min-width: 25px;
+ 	height: 28px;
+ 	line-height: 28px;
+ 	margin: 0 5px;
+ 	color: #333;
+ 	
+ 	text-align: center;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    background: #fff;
+ }
+.mg-pagination a {
+ 	cursor: pointer;
+ 	text-decoration: none;
+ 	transition: all .2s linear;
+}
+.mg-pagination a:hover {
+	background-color: #f2f2f2;
+}
+.mg-pagination .nopage {
+	color: #999;
+	cursor: default;
+}
+.mg-pagination .curpage {
+	color: #fff;
+	border-color: #5f9000;
+	background-color: #699e00;
+	cursor: default;
+}
+
+/* 简化版样式 */
+.pagination-simple {
+	display: inline-block;
+}
+.pagination-simple input {
+	width: 25px;
+	outline: none;
+}
+.pagination-simple .slash {
+	margin: 0 10px 0 5px;
+}
+.pagination-simple .totalPage {
+	
+}

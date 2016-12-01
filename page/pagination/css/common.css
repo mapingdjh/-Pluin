@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*组件样式*/
+table{
+    width: 100%;
+    border:1px solid #CAD3DA;
+    border-collapse: collapse;
+}
+table td{
+	padding:10px;
+	width:150px;
+	border:1px solid #CAD3DA;
+	text-align: center;
+}
+table thead tr{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom:1px solid #CAD3DA;
+}
+table thead td{
+	padding:0;
+	border-left:1px solid #CAD3DA;
+	background:#DFEBFB;
+}
+table .explain{
+	width: 500px;
+}
+table tbody tr:nth-child(even){
+	background:#E7EFF9;
+}
