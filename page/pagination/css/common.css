@@ -1,4 +1,7 @@
 @charset "UTF-8";
+h2,h3,h4 {
+	border: none !important;
+}
 /*组件样式*/
 table{
     width: 100%;
